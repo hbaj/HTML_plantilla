@@ -37,7 +37,14 @@
     ></script>
 
     <link rel="stylesheet" type="text/css" href="HOMECSS/home.css" />
-
+<!-- pitovTable js CDN -->
+<link rel="stylesheet"  href=" https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.13.0/pivot.min.css"/>   
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.13.0/pivot.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.6.0/tips_data.min.js"></script>
     <!-- ##########************How to link to CSS files in another folders *****************##################
 #########     Starting with "/" returns to the root directory and starts there               #############
 #########     Starting with "../" moves one directory backwards and starts there             ############
@@ -59,8 +66,11 @@
           <table id="myTable" class="table">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Age</th>
+                    <th>Province </th>
+                    <th>Party</th>
+                    <th>Age</th>
+                    <th>Name</th>
+                    <th>Gender</th>
               </tr>
             </thead>
           </table>
@@ -68,6 +78,12 @@
         <div class="col-sm-3"></div>
       </div>
     </div>
+<div class="container">
+    <div class="col-sm-12" align = "center"
+    <div id="output">
+        </div>
+    </div>
+</div>
     <!-- 
 ################********* How to link to JS files in another folders *******###########
 #############     <script src="..\[folder_name]\[file_name].js"></script>   ###########

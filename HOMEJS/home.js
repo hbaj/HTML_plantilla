@@ -1,22 +1,9 @@
 $(document).ready(function() {
   var tabla = $("#myTable");
-  tabla.hide();
-  tabla.DataTable().clear();
-  tabla.DataTable().destroy();
-  var mydata1 = [
-    { name: "locos", numero: 90 },
-    { name: "lucas", numero: "98" }
-  ];
-  var mydata1 = [
-    {
-      Country: "Finland",
-      Ladder: 1
-    },
-    {
-      Country: "Denmark",
-      Ladder: 2
-    }
-  ];
+  // tabla.hide();
+  // tabla.DataTable().clear();
+  // tabla.DataTable().destroy();
+  
 
   tabla
     .DataTable({
@@ -38,6 +25,9 @@ $(document).ready(function() {
     })
     .draw();
   tabla.show();
+
+
+  
 //   var utils = $.pivotUtilities;
 //   var heatmap = utils.renderers["Heatmap"];
 //   var sumOverSum = utils.aggregators["Sum over Sum"];
